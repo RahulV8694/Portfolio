@@ -1,0 +1,92 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+  <title>Publications | Rahul Vijaykumar</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+  <link rel="stylesheet" href="assets/css/main.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+  <style>
+    .publication-entry {
+      padding: 1.5em;
+      margin-bottom: 2em;
+      background-color: #f9f9f9;
+      border-radius: 8px;
+      border-left: 5px solid #3f51b5;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+    }
+    .publication-entry h3 {
+      margin: 0 0 0.3em 0;
+    }
+    .publication-entry span {
+      display: block;
+      font-size: 0.95em;
+      color: #666;
+      margin-bottom: 0.5em;
+    }
+    .publication-entry a {
+      color: #3f51b5;
+      font-weight: 600;
+    }
+  </style>
+</head>
+<body class="is-preload">
+  <div id="wrapper" class="fade-in">
+
+    <!-- Header Include -->
+    <div data-include="header.html"></div>
+
+    <!-- Main -->
+    <div id="main">
+      <div style="padding: 1em; text-align: left;"><a href="index.html" class="button">← Back to Home</a></div>
+
+      <header class="major">
+        <h2>Publications & Research</h2>
+        <p>Peer-reviewed publications, conference papers, and research collaborations</p>
+      </header>
+
+      <section class="posts">
+
+        <div class="publication-entry animate__animated animate__fadeInUp">
+          <h3>Deepfake Attacks on Biometric Recognition: Evaluation of Resistance to Injection Attacks</h3>
+          <span>IEEE UEMCON 2024 · Presented at IBM T.J. Watson Research Center</span>
+          <p>This paper evaluates the robustness of biometric systems under injection attacks using deepfake voice and image inputs, highlighting challenges and proposing mitigation strategies.</p>
+          <a href="https://ieeexplore.ieee.org/document/your-paper-id" target="_blank">View Publication</a>
+        </div>
+
+        <div class="publication-entry animate__animated animate__fadeInUp">
+          <h3>ELAD-SVDSR: Enhanced Lightweight Adaptive Deep Super Resolution using Sparse Variational Denoising</h3>
+          <span>IEEE Dataport · 2024</span>
+          <p>This study introduces a lightweight yet high-performance deep learning model to improve visual resolution using sparse variational inference and denoising autoencoders.</p>
+          <a href="https://ieee-dataport.org/open-access/elad-svdsr-enhanced-lightweight-adaptive-deep-super-resolution-using-sparse-variational" target="_blank">Access Dataset</a>
+        </div>
+
+        <!-- Add more publications as needed -->
+
+      </section>
+    </div>
+
+    <!-- Footer Include -->
+    <div data-include="footer.html"></div>
+
+    <!-- Scripts -->
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/jquery.scrollex.min.js"></script>
+    <script src="assets/js/jquery.scrolly.min.js"></script>
+    <script src="assets/js/browser.min.js"></script>
+    <script src="assets/js/breakpoints.min.js"></script>
+    <script src="assets/js/util.js"></script>
+    <script src="assets/js/main.js"></script>
+    <script>
+      function includeHTML() {
+        document.querySelectorAll('[data-include]').forEach(async el => {
+          const file = el.getAttribute("data-include");
+          const res = await fetch(file);
+          if (res.ok) el.innerHTML = await res.text();
+        });
+      }
+      document.addEventListener("DOMContentLoaded", includeHTML);
+    </script>
+  </div>
+</body>
+</html>

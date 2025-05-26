@@ -1,0 +1,138 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+  <title>Experience | Rahul Vijaykumar</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+  <link rel="stylesheet" href="assets/css/main.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+  <style>
+    .experience-entry {
+      padding: 1.5em;
+      margin-bottom: 2em;
+      background-color: #f9f9f9;
+      border-radius: 8px;
+      border-left: 5px solid #3f51b5;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+    }
+    .experience-entry h3 {
+      margin: 0 0 0.3em 0;
+    }
+    .experience-entry span {
+      display: block;
+      font-size: 0.95em;
+      color: #666;
+      margin-bottom: 0.5em;
+    }
+    .experience-entry ul {
+      margin: 0.5em 0 0 1.2em;
+      padding-left: 1em;
+    }
+    .experience-entry ul li {
+      margin-bottom: 0.5em;
+    }
+  </style>
+</head>
+<body class="is-preload">
+  <div id="wrapper" class="fade-in">
+
+    <!-- Header Include -->
+    <div data-include="header.html"></div>
+
+    <div style="padding: 1em; text-align: left;"><a href="index.html" class="button">← Back to Home</a></div>
+
+
+      <header class="major">
+        <h2>Professional Experience</h2>
+        <p>Industry contributions, research projects, and engineering leadership</p>
+      </header>
+
+      <section class="posts">
+
+        <div class="experience-entry animate__animated animate__fadeInUp">
+          <h3>Software Engineer – Private Identity LLC</h3>
+          <span>Jan 2025 – Apr 2025 · 4 mos<br>New Jersey, United States · Remote</span>
+          <ul>
+            <li>Engineered biometric onboarding workflows using SQL, JavaScript, and authentication systems.</li>
+            <li>Collaborated cross-functionally to streamline integrations and reduce operational issues by 30%.</li>
+            <li>Optimized backend logic to enhance verification accuracy and speed across distributed deployments.</li>
+          </ul>
+        </div>
+
+        <div class="experience-entry animate__animated animate__fadeInUp">
+          <h3>Research Assistant – Clarkson University</h3>
+          <span>Aug 2023 – Dec 2024 · 1 yr 5 mos<br>Potsdam, NY · On-site</span>
+          <ul>
+            <li>Developed AI models for deepfake detection with Python, achieving 12% reduction in false acceptances.</li>
+            <li>Enhanced response times by 25% for biometric scanning on Android using React Native and TensorFlow.</li>
+            <li>Presented research at IEEE UEMCON and NSF CITeR conferences, focusing on multimodal biometrics.</li>
+          </ul>
+        </div>
+
+        <div class="experience-entry animate__animated animate__fadeInUp">
+          <h3>Software Engineer III – Oracle Cerner</h3>
+          <span>Oct 2021 – Jul 2023 · 1 yr 10 mos<br>Bengaluru, India · Hybrid</span>
+          <ul>
+            <li>Led migration of identity systems to React, improving load performance by 30% and UX by 20%.</li>
+            <li>Guided team of 3 engineers through Oracle-Cerner integration of IAM modules.</li>
+            <li>Enhanced data sync workflows by 40% through architecture-level cloud updates.</li>
+          </ul>
+        </div>
+
+        <div class="experience-entry animate__animated animate__fadeInUp">
+          <h3>Software Engineer II – Oracle Cerner</h3>
+          <span>Jan 2021 – Oct 2021 · 10 mos<br>Bengaluru, India</span>
+          <ul>
+            <li>Designed and delivered registration features for US and Australia clients using custom scripting.</li>
+            <li>Reduced software defects by 25% through unit testing and agile release planning.</li>
+            <li>Supported system optimization and client-specific module enhancements.</li>
+          </ul>
+        </div>
+
+        <div class="experience-entry animate__animated animate__fadeInUp">
+          <h3>Production Software Engineer – Oracle Cerner</h3>
+          <span>Mar 2019 – Jan 2021 · 1 yr 11 mos<br>Bengaluru, India</span>
+          <ul>
+            <li>Troubleshot system issues using SQL, C++, and C# to maintain high reliability in clinical systems.</li>
+            <li>Improved efficiency of registration and scheduling modules by 20%.</li>
+            <li>Achieved 95% CSAT by managing user support and implementing requested improvements.</li>
+          </ul>
+        </div>
+
+        <div class="experience-entry animate__animated animate__fadeInUp">
+          <h3>Software Engineer – Vuelogix Technologies Pvt Ltd</h3>
+          <span>Oct 2017 – Feb 2019 · 1 yr 5 mos<br>Bangalore, India</span>
+          <ul>
+            <li>Built IoT security applications using Python and BeagleBone with real-time data monitoring.</li>
+            <li>Delivered web dashboards for TCP/IP device monitoring with 30% faster incident responses.</li>
+            <li>Implemented alert automation and improved end-user satisfaction by 20%.</li>
+          </ul>
+        </div>
+
+      </section>
+    </div>
+
+    <!-- Footer Include -->
+    <div data-include="footer.html"></div>
+
+    <!-- Scripts -->
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/jquery.scrollex.min.js"></script>
+    <script src="assets/js/jquery.scrolly.min.js"></script>
+    <script src="assets/js/browser.min.js"></script>
+    <script src="assets/js/breakpoints.min.js"></script>
+    <script src="assets/js/util.js"></script>
+    <script src="assets/js/main.js"></script>
+    <script>
+      function includeHTML() {
+        document.querySelectorAll('[data-include]').forEach(async el => {
+          const file = el.getAttribute("data-include");
+          const res = await fetch(file);
+          if (res.ok) el.innerHTML = await res.text();
+        });
+      }
+      document.addEventListener("DOMContentLoaded", includeHTML);
+    </script>
+  </div>
+</body>
+</html>
